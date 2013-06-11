@@ -9,7 +9,7 @@ some tornado utils helper
 Here's a simple example.
 
     import tornado.web
-    from tornado_addons.route import route
+    from route import route
     
     route.inithandlercls(BaseHandler)
     get = route.get
