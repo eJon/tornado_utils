@@ -47,6 +47,6 @@ class BaseHandler(tornado.web.RequestHandler):
             self.write('method not found') 
             return 
       
-        if status_code == 500: 
-            self.write('oh, shit happens')
-            return
+        # if status_code == 500: 
+        #     self.write('oh, shit happens')
+        #     return
