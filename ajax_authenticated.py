@@ -14,7 +14,7 @@ def is_ajax(method):
                 return method(self, *args, **kwargs)
 
         else:                                                                                                                                                                 
-            self.redirect("/")                                                     
+            self.write({"status": "error", "msg": "It is not ajax request"})                                                    
 
     return wrapper 
     
