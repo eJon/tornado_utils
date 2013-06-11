@@ -6,6 +6,8 @@ some tornado utils helper
 
 ### [routes](https://github.com/thomashuang/tornado_utils/blob/master/route.py)
 
+Easy way for RESTFUL SYTLE
+
 Here's a simple example.
 
     import tornado.web
