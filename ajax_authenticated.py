@@ -5,6 +5,19 @@ import tornado.web
 import functools
 
 
+def is_ajax(method):
+
+    @wraps(method)
+    def wrapper(self, *args, **kwargs):
+        if "X-Requested-With" in self.request.headers:
+            if self.request.headers['X-Requested-With'] == "XMLHttpRequest":
+                return method(self, *args, **kwargs)
+
+        else:                                                                                                                                                                 
+            self.redirect("/")                                                     
+
+    return wrapper 
+    
 def ajax_authenticated(method):
     """Decorate methods with this to require that the user be logged in.
 
