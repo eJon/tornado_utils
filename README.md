@@ -6,7 +6,7 @@ some tornado utils helper
 
 ### [routes](https://github.com/thomashuang/tornado_utils/blob/master/route.py)
 
-ＥＡＳＹ ＷＡＹ　ＦＯＲ RESTFUL STYLE
+ＥＡＳＹ ＷＡＹ ＦＯＲ RESTFUL STYLE
 
 Here's a simple example.
 
