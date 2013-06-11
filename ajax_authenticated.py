@@ -1,6 +1,9 @@
 #!/usr/bin/python2.7
 #-*-coding:utf-8-*-
 
+import tornado.web
+import functools
+
 
 def ajax_authenticated(method):
     """Decorate methods with this to require that the user be logged in.
